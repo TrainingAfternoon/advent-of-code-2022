@@ -40,7 +40,7 @@ fun main() {
         var max = 0
 
         for(range in ranges) {
-            if(range.first > max && range.first in 0..bound) {
+            if(range.first > max && range.first in 0..bound+1) {
                 println((range.first - 1).toLong()*4000000L + y.toLong())
                 return
             } else if(range.last > max) max = range.last+1
